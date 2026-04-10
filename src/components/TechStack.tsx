@@ -16,7 +16,7 @@ const imageUrls = [
   "/images/java.png",
   "/images/python.png",
   "/images/react2.webp",
-  "/images/angular.png",
+  "/images/Angular.png",
   "/images/mongo.webp",
   "/images/mysql.webp",
   "/images/postgres.png",
@@ -26,9 +26,13 @@ const imageUrls = [
   "/images/rabbitMQ.png",
   "/images/ELK.png",
   "/images/jwt.png",
-  "/images/spring-boot.png",
+  "/images/spring boot.png",
   "/images/spring.png",
+  "/images/github.png",
+  "/images/redis.png",
+  "/images/langchain.png",
 ];
+
 
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
