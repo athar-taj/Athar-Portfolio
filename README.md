@@ -2,7 +2,7 @@
 
 This repository contains the source code for a personal 3D portfolio built with React, TypeScript, Three.js, React Three Fiber, and GSAP. It includes animated page sections, a character scene, custom cursor interactions, and smooth transitions designed for a modern portfolio experience.
 
-Live site: [https://athartaj.netlify.app/](https://athartaj.netlify.app/)
+Live site: [https://athar-taj.vercel.app/](https://athar-taj.vercel.app/)
 
 ![Portfolio Preview](public/images/preview1.png)
 
@@ -169,7 +169,7 @@ You can adapt this portfolio to your own profile by updating the following areas
    npm run preview
    ```
 
-3. Deploy the generated `dist/` folder to your hosting provider (for example Vercel, Netlify, or Cloudflare Pages).
+3. Deploy the generated `dist/` folder to your hosting provider (for example Vercel, vercel, or Cloudflare Pages).
 
 ## License
 
