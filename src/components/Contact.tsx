@@ -24,12 +24,13 @@ const Contact = () => {
             <p data-cursor="disable">Ahmedabad, Gujarat (380021)</p>
             <h4>Education</h4>
             <p>
-              Bachelor's Degree in Information Technology — L.J University,
-              Ahmedabad
+              B.Tech. in Information Technology — L.J. University, Ahmedabad
             </p>
             <p>
-              Bachelor’s Education in Information Technology — Silver Oak University,
-              Ahmedabad
+              B.E. Diploma in Information Technology — Silver Oak University, Ahmedabad
+            </p>
+            <p>
+              Secondary School (GSEB) — Seth A.H. Sarasvati School, Ahmedabad
             </p>
           </div>
           <div className="contact-box">

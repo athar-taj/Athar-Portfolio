@@ -78,6 +78,17 @@ const Scene = () => {
       let mouse = { x: 0, y: 0 },
         interpolation = { x: 0.1, y: 0.2 };
 
+      let isIntersecting = true;
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          isIntersecting = entry.isIntersecting;
+        },
+        { threshold: 0.05 }
+      );
+      if (canvasDiv.current) {
+        observer.observe(canvasDiv.current);
+      }
+
       const onMouseMove = (event: MouseEvent) => {
         handleMouseMove(event, (x, y) => (mouse = { x, y }));
       };
@@ -108,6 +119,7 @@ const Scene = () => {
       }
       const animate = () => {
         requestAnimationFrame(animate);
+        if (!isIntersecting) return;
         if (headBone) {
           handleHeadRotation(
             headBone,
@@ -127,6 +139,7 @@ const Scene = () => {
       };
       animate();
       return () => {
+        observer.disconnect();
         clearTimeout(debounce);
         scene.clear();
         renderer.dispose();

@@ -8,31 +8,24 @@ const projects = [
     title: "Smart Business Ledger App",
     category: "FinTech · Business management platform",
     tools:
-      "Spring Boot, JPA, PostgreSQL, Spring Security, JWT, Swagger, RabbitMQ, Redis, AWS",
+      "Spring Boot, PostgreSQL, Spring Security, JWT, AWS, RabbitMQ, Redis, Swagger",
     image: "/images/buissness_ledger.webp",
+    link: "https://github.com/athar-taj",
+  },
+  {
+    title: "Thymos - HealthCare Platform",
+    category: "HealthCare · Food delivery & restaurant management platform",
+    tools: "Node JS, Postgres, Angular, JWT, AWS, Redis, ELK Stack, Kafka",
+    image: "/images/thymos.png",
     link: "https://github.com/athar-taj",
   },
   {
     title: "Social Helping Platform",
     category: "Donations & coordination platform",
-    tools: "React, Python, FastAPI, MongoDB, AWS S3, Swagger, Stripe",
+    tools: "React, Python, FastAPI, MongoDB, AWS S3, Stripe, Swagger",
     image: "/images/serve-unity.png",
     link: "https://github.com/athar-taj",
   },
-  {
-    "title": "Taj Perfumes",
-    "category": "E-commerce & Blogging Platform",
-    "tools": "React, Python, FastAPI, MongoDB",
-    "image": "/images/taj_perfumes.png",
-    "link": "https://github.com/athar-taj"
-  },
-  {
-  "title": "TaskForge",
-  "category": "Multi-Tenant Project Management Backend",
-  "tools": "Java 21, Spring Boot, Spring Security, Spring Data JPA, CockroachDB, Keycloak, Redis, Bucket4j, Flyway, Swagger (OpenAPI)",
-  "image": "/images/project-overview.png",
-  "link": "https://github.com/athar-taj"
-}
 ];
 
 const Work = () => {

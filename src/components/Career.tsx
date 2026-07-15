@@ -16,28 +16,24 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Java Developer</h4>
-                <h5>Qrious Tech Team LLP · Ahmedabad</h5>
+                <h5>Qrious Tech Team LLP · Prahlad Nagar, Ahmedabad</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2025 – Present</h3>
             </div>
             <p>
-              Building and enhancing backend services using Java and Spring Boot.
-              Working on scalable microservices, REST APIs, and performance
-              improvements across multiple domains.
+              Built and maintained backend services across FinTech, Banking, Food Delivery, Healthcare, and E-commerce. Designed and improved APIs to handle higher traffic, optimized data-fetching processes, and built an AI-powered chatbot using LangChain.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Backend Developer</h4>
+                <h4>Software Developer</h4>
                 <h5>Group Takey · Ahmedabad</h5>
               </div>
-              <h3>2022–23</h3>
+              <h3>2022 – 2024</h3>
             </div>
             <p>
-              Contributed to backend development by optimizing logic, integrating
-              APIs, collaborating with teams, and resolving technical challenges to
-              deliver successful projects.
+              Improved backend code efficiency and integrated with third-party APIs for projects in School Management and Telecommunication domains, which made the app respond faster and run more reliably.
             </p>
           </div>
           <div className="career-info-box">
