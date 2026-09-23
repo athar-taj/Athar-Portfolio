@@ -81,6 +81,17 @@
   font-size: 28px;
   font-weight: 500;
   margin: 0;
+  transition: color 0.3s ease;
+}
+
+.project-title-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-title-link:hover h4 {
+  color: var(--accentColor);
 }
 
 .carousel-category {
@@ -90,23 +101,69 @@
   font-size: 16px;
 }
 
+.project-description-box {
+  margin-top: 10px;
+}
+
+.project-desc-text {
+  font-weight: 300;
+  color: #d1d5db;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .carousel-tools {
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 .carousel-tools .tools-label {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   opacity: 0.6;
   text-transform: uppercase;
   letter-spacing: 1px;
+  display: block;
+  margin-bottom: 8px;
 }
 
-.carousel-tools p {
-  font-weight: 200;
-  color: #adacac;
-  margin: 6px 0 0;
-  font-size: 15px;
+.project-skills-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-skill-tag {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 3px 10px;
+  background-color: var(--glassBackground);
+  border: 1px solid var(--glassBorder);
+  border-radius: 20px;
+  color: #e2e8f0;
+}
+
+.project-toggle-btn {
+  align-self: flex-start;
+  margin-top: 14px;
+  background: transparent;
+  border: none;
+  color: var(--accentColor);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.project-toggle-btn:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 .carousel-image-wrapper {

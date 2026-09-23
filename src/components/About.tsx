@@ -6,11 +6,10 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I’m Shaikh Mohammed Athar Abdul Rehman (Athar Taj), a Software Developer
-          focused on building scalable backend systems and production-ready APIs.
-          I work primarily with Java and Spring Boot in microservices-based
-          architectures, and I also build full-stack features using Angular/React.
-          Recently, I’ve been exploring GenAI workflows with LangChain/LangGraph.
+          I build backend systems across FinTech, Healthcare, and Food Delivery.
+          I care about what happens when things break in production and making sure
+          I know before users do. Lately, I spend my time exploring agentic AI
+          workflows and autonomous coding systems that reason cleanly about codebases.
         </p>
       </div>
     </div>

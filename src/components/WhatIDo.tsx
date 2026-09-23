@@ -87,21 +87,23 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>BACKEND ENGINEERING</h3>
-              <h4>APIs, microservices, and scalable systems</h4>
+              <h3>BACKEND &amp; SYSTEMS</h3>
+              <h4>Microservices, resilient APIs, and data architecture</h4>
               <p>
-                I build secure, reliable backend services using Java and Spring Boot,
-                focusing on clean architecture, performance, and maintainability.
+                I build production microservices that hold up under real traffic,
+                focusing on clean boundaries, caching, messaging, and system observability.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Core &amp; data</h5>
               <div className="what-content-flex">
                 <div className="what-tags">Java</div>
                 <div className="what-tags">Spring Boot</div>
-                <div className="what-tags">REST APIs</div>
-                <div className="what-tags">Spring Security + JWT</div>
-                <div className="what-tags">PostgreSQL/MySQL</div>
+                <div className="what-tags">Microservices</div>
+                <div className="what-tags">PostgreSQL</div>
                 <div className="what-tags">Redis</div>
-                <div className="what-tags">RabbitMQ/Kafka</div>
+                <div className="what-tags">Kafka</div>
+                <div className="what-tags">RabbitMQ</div>
+                <div className="what-tags">AWS</div>
+                <div className="what-tags">Docker</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -125,21 +127,21 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>FULL-STACK &amp; GENAI</h3>
-              <h4>From UI to AI-powered features</h4>
+              <h3>AGENTIC AI &amp; FULL-STACK</h3>
+              <h4>Autonomous workflows, RAG, and interfaces</h4>
               <p>
-                I ship features end-to-end using Angular/React, and I explore
-                GenAI workflows (LangChain/LangGraph) for real-world use cases.
+                I develop agentic coding workflows and LLM applications using LangChain,
+                LangGraph, and RAG, paired with full-stack interfaces in Angular and React.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>AI &amp; frontend</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Python</div>
-                <div className="what-tags">Angular</div>
-                <div className="what-tags">React</div>
                 <div className="what-tags">LangChain</div>
                 <div className="what-tags">LangGraph</div>
-                <div className="what-tags">Docker</div>
-                <div className="what-tags">AWS</div>
+                <div className="what-tags">RAG Workflows</div>
+                <div className="what-tags">Python / FastAPI</div>
+                <div className="what-tags">React</div>
+                <div className="what-tags">Angular</div>
+                <div className="what-tags">Node.js</div>
               </div>
               <div className="what-arrow"></div>
             </div>

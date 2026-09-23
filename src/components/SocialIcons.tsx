@@ -68,7 +68,7 @@ const SocialIcons = () => {
         </span>
         <span>
           <a
-            href="https://www.linkedin.com/in/athar-taj-b9035931b"
+            href="https://www.linkedin.com/in/athar-shaikh-b9035931b/"
             target="_blank"
             rel="noreferrer"
           >
@@ -78,7 +78,7 @@ const SocialIcons = () => {
       </div>
       <a
         className="resume-button"
-        href="/ATHAR_RESUME.pdf"
+        href="/ATHAR_CV.pdf"
         target="_blank"
         rel="noreferrer"
       >

@@ -11,27 +11,38 @@ const Contact = () => {
             <h4>Connect</h4>
             <p>
               <a
-                href="https://www.linkedin.com/in/athar-taj-b9035931b"
+                href="https://www.linkedin.com/in/athar-shaikh-b9035931b/"
                 target="_blank"
                 rel="noreferrer"
                 data-cursor="disable"
               >
-                LinkedIn — athar-taj
+                LinkedIn — Athar Shaikh
               </a>
             </p>
-            <p data-cursor="disable">Email — contact.athar.taj@gmail.com</p>
-            <p data-cursor="disable">Phone — +91 987 519 2829</p>
+            <p>
+              <a
+                href="mailto:contact.athar.taj@gmail.com"
+                data-cursor="disable"
+              >
+                Email — contact.athar.taj@gmail.com
+              </a>
+            </p>
+            <p>
+              <a
+                href="tel:+919875192829"
+                data-cursor="disable"
+              >
+                Phone — +91 987 519 2829
+              </a>
+            </p>
             <p data-cursor="disable">Ahmedabad, Gujarat (380021)</p>
             <h4>Education</h4>
-            <p>
-              B.Tech. in Information Technology — L.J. University, Ahmedabad
-            </p>
-            <p>
-              B.E. Diploma in Information Technology — Silver Oak University, Ahmedabad
-            </p>
-            <p>
-              Secondary School (GSEB) — Seth A.H. Sarasvati School, Ahmedabad
-            </p>
+            <p>B.Tech, Information Technology — LJIET, Ahmedabad</p>
+            <p>Diploma in Information Technology — Silver Oak University, Ahmedabad</p>
+            <h4>Certifications</h4>
+            <p>• Building Generative AI-Powered Applications with Python</p>
+            <p>• AWS Cloud Technical Essentials</p>
+            <p>• Exploratory Data Analysis for Machine Learning</p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
@@ -45,7 +56,7 @@ const Contact = () => {
               GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/athar-taj-b9035931b"
+              href="https://www.linkedin.com/in/athar-shaikh-b9035931b/"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -56,7 +67,7 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Athar Taj</span>
+              Designed and Developed <br /> by <span>Athar Shaikh</span>
             </h2>
             <h5>
               <MdCopyright /> 2026
