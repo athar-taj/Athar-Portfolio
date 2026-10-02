@@ -17,18 +17,31 @@
   line-height: 70px;
   font-weight: 400;
   text-align: center;
+  color: var(--textColor);
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+[data-theme="dark"] .career-section h2 {
   background: linear-gradient(0deg, #0d9488, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  margin-top: 50px;
-  margin-bottom: 90px;
+}
+
+[data-theme="light"] .career-section h2 {
+  background: linear-gradient(0deg, #0d9488, #0f172a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .career-section h2 > span {
   font-family: "Geist", sans-serif;
   font-weight: 300;
+  color: var(--accentColor);
 }
 
 .career-info {

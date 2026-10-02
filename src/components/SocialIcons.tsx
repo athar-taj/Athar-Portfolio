@@ -1,19 +1,42 @@
 import {
   FaGithub,
   FaLinkedinIn,
+  FaMedium,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import HoverLinks from "./HoverLinks";
 
 const SocialIcons = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Show floating side icons only when scrolled past the landing hero section
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      const landingEl = document.getElementById("landingDiv");
+      const threshold = landingEl ? landingEl.offsetHeight * 0.45 : 350;
+      setIsVisible(scrollY > threshold);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Magnetic cursor hover effect
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
+    if (!social) return;
 
     social.querySelectorAll("span").forEach((item) => {
       const elem = item as HTMLElement;
       const link = elem.querySelector("a") as HTMLElement;
+      if (!link) return;
 
       const rect = elem.getBoundingClientRect();
       let mouseX = rect.width / 2;
@@ -45,7 +68,6 @@ const SocialIcons = () => {
       };
 
       document.addEventListener("mousemove", onMouseMove);
-
       updatePosition();
 
       return () => {
@@ -56,12 +78,17 @@ const SocialIcons = () => {
 
   return (
     <div className="icons-section">
-      <div className="social-icons" data-cursor="icons" id="social">
+      <div
+        className={`social-icons ${isVisible ? "social-icons-visible" : ""}`}
+        data-cursor="icons"
+        id="social"
+      >
         <span>
           <a
-            href="https://github.com/athar-taj"
+            href="https://github.com/shaikh-athar"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
           >
             <FaGithub />
           </a>
@@ -71,14 +98,25 @@ const SocialIcons = () => {
             href="https://www.linkedin.com/in/athar-shaikh-b9035931b/"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
           >
             <FaLinkedinIn />
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://medium.com/@contact.athar.shaikh"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Medium"
+          >
+            <FaMedium />
           </a>
         </span>
       </div>
       <a
         className="resume-button"
-        href="/ATHAR_CV.pdf"
+        href="/ATHAR.pdf"
         target="_blank"
         rel="noreferrer"
       >
