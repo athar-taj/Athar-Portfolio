@@ -15,7 +15,7 @@
   -webkit-user-select: none;
   -moz-user-select: none;
 
-  /* Theme Variables */
+  /* Theme Variables - Dark Mode (Default) */
   --accentColor: #5eead4;
   --accentColorTransparent: rgba(94, 234, 212, 0.15);
   --backgroundColor: #0a0e17;
@@ -26,6 +26,9 @@
   --navFade: linear-gradient(to bottom, #0a0e17fc, #0a0e1700);
   --glassBackground: rgba(255, 255, 255, 0.05);
   --glassBorder: rgba(255, 255, 255, 0.1);
+  --cardBg: rgba(255, 255, 255, 0.03);
+  --codeBlockBg: rgba(0, 0, 0, 0.4);
+  --codeBlockText: #93c5fd;
 
   --vh: 100vh;
   --vh: 100svh;
@@ -33,21 +36,63 @@
   color-scheme: dark;
   color: var(--textColor);
   background-color: var(--backgroundColor);
+
+  /* Global Theme Transition */
+  transition: background-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [data-theme="light"] {
   --accentColor: #0d9488;
-  --accentColorTransparent: rgba(13, 148, 136, 0.15);
+  --accentColorTransparent: rgba(13, 148, 136, 0.12);
   --backgroundColor: #f8fafc;
   --secondaryBackgroundColor: #f1f5f9;
   --textColor: #0f172a;
-  --secondaryTextColor: #64748b;
+  --secondaryTextColor: #475569;
   --borderColor: #e2e8f0;
   --navFade: linear-gradient(to bottom, #f8fafcfc, #f8fafc00);
-  --glassBackground: rgba(0, 0, 0, 0.05);
+  --glassBackground: rgba(0, 0, 0, 0.04);
   --glassBorder: rgba(0, 0, 0, 0.1);
+  --cardBg: rgba(255, 255, 255, 0.85);
+  --codeBlockBg: rgba(15, 23, 42, 0.06);
+  --codeBlockText: #0369a1;
 
   color-scheme: light;
+}
+
+/* Smooth transition across all layout containers when theme changes */
+#smooth-wrapper {
+  position: relative;
+  z-index: 15;
+  width: 100%;
+}
+
+#smooth-content {
+  position: relative;
+  width: 100%;
+}
+
+body,
+#smooth-wrapper,
+#smooth-content,
+.container-main,
+.work-section,
+.what-content,
+.about-section,
+.career-section,
+.contact-section,
+.landing-section,
+.navbar-right,
+.theme-toggle-btn,
+.theme-dropdown-menu,
+.landing-btn,
+.project-skill-tag,
+.what-tags,
+.carousel-track-container {
+  transition: background-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,

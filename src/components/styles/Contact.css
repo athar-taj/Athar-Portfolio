@@ -1,28 +1,34 @@
 .contact-section {
   margin: auto;
-  padding-bottom: 100px;
-  margin-top: 100px;
+  padding: 80px 0 120px 0;
   position: relative;
   z-index: 2;
   background-color: var(--backgroundColor);
+  border-top: 1px solid var(--borderColor);
 }
 
 .contact-section h3 {
   font-size: 60px;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 40px 0;
+  color: var(--textColor);
+  letter-spacing: 2px;
 }
 
 .contact-flex {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .contact-flex h4 {
-  font-weight: 500;
-  margin: 0;
-  opacity: 0.6;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 14px 0;
+  color: var(--accentColor);
 }
 
 .contact-box {
@@ -30,33 +36,76 @@
   flex-direction: column;
 }
 
+.contact-box:first-child {
+  max-width: 440px;
+}
+
 .contact-flex p {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--secondaryTextColor);
+}
+
+.contact-flex p a {
+  color: var(--textColor);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.contact-flex p a:hover {
+  color: var(--accentColor);
+  transform: translateX(4px);
 }
 
 a.contact-social {
-  font-size: 25px;
-  border-bottom: 1px solid #ccc;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--textColor);
+  border-bottom: 1px solid var(--borderColor);
+  padding: 8px 0;
+  margin-bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  min-width: 180px;
+}
+
+a.contact-social:hover {
+  color: var(--accentColor);
+  border-bottom-color: var(--accentColor);
+  transform: translateX(4px);
 }
 
 .contact-box h2 {
   font-weight: 400;
-  font-size: 23px;
-  margin: 0;
+  font-size: 24px;
+  line-height: 1.35;
+  margin: 0 0 16px 0;
+  color: var(--textColor);
 }
 
 .contact-box h2 > span {
   color: var(--accentColor);
+  font-weight: 600;
 }
 
 .contact-box h5 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 20px;
   display: flex;
-  gap: 10px;
-  opacity: 0.5;
+  align-items: center;
+  gap: 8px;
+  color: var(--secondaryTextColor);
+  margin: 0;
 }
 
 @media only screen and (max-width: 1600px) {

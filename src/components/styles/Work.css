@@ -30,8 +30,8 @@
 .carousel-track-container {
   overflow: hidden;
   width: 100%;
-  border-top: 1px solid #363636;
-  border-bottom: 1px solid #363636;
+  border-top: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
 }
 
 .carousel-track {
@@ -45,42 +45,45 @@
   min-width: 100%;
   flex-shrink: 0;
   box-sizing: border-box;
-  padding: 50px 0;
+  padding: 30px 0 40px 0;
   overflow: hidden;
 }
 
 .carousel-content {
   display: flex;
-  align-items: center;
-  gap: 60px;
+  align-items: flex-start;
+  gap: 40px;
   width: 100%;
 }
 
 .carousel-info {
-  flex: 1;
+  flex: 1.1;
   display: flex;
-  gap: 30px;
+  gap: 24px;
   align-items: flex-start;
 }
 
 .carousel-number h3 {
-  font-size: 60px;
+  font-size: 52px;
   line-height: 1;
   margin: 0;
   font-weight: 600;
   opacity: 0.3;
+  color: var(--textColor);
 }
 
 .carousel-details {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
+  width: 100%;
 }
 
 .carousel-details h4 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 500;
   margin: 0;
+  color: var(--textColor);
   transition: color 0.3s ease;
 }
 
@@ -95,36 +98,67 @@
 }
 
 .carousel-category {
-  font-weight: 200;
-  color: #adacac;
+  font-weight: 300;
+  color: var(--secondaryTextColor);
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .project-description-box {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .project-desc-text {
   font-weight: 300;
-  color: #d1d5db;
-  font-size: 15px;
-  line-height: 1.6;
+  color: var(--textColor);
+  font-size: 14px;
+  line-height: 1.5;
   margin: 0;
+  opacity: 0.9;
+}
+
+/* ── Right Column: Media + Architecture + Tech Stack ── */
+.carousel-media-column {
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.carousel-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  max-height: 280px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid var(--borderColor);
+  background: var(--cardBg);
+}
+
+.carousel-media-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .carousel-tools {
-  margin-top: 14px;
+  margin-top: 0;
 }
 
 .carousel-tools .tools-label {
-  font-size: 13px;
-  font-weight: 400;
-  opacity: 0.6;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.7;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  color: var(--secondaryTextColor);
 }
 
 .project-skills-flex {
@@ -134,18 +168,24 @@
 }
 
 .project-skill-tag {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
-  padding: 3px 10px;
+  padding: 3px 9px;
   background-color: var(--glassBackground);
   border: 1px solid var(--glassBorder);
-  border-radius: 20px;
-  color: #e2e8f0;
+  border-radius: 16px;
+  color: var(--textColor);
+  transition: all 0.2s ease;
+}
+
+.project-skill-tag:hover {
+  border-color: var(--accentColor);
+  color: var(--accentColor);
 }
 
 .project-toggle-btn {
   align-self: flex-start;
-  margin-top: 14px;
+  margin-top: 10px;
   background: transparent;
   border: none;
   color: var(--accentColor);
@@ -154,26 +194,11 @@
   font-weight: 500;
   cursor: pointer;
   padding: 0;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   display: inline-flex;
   align-items: center;
   gap: 4px;
   transition: opacity 0.2s ease;
-}
-
-.project-toggle-btn:hover {
-  opacity: 0.8;
-  text-decoration: underline;
-}
-
-.carousel-image-wrapper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
 }
 
 /* ── Navigation Arrows ── */
@@ -324,7 +349,7 @@
   }
 
   .carousel-content {
-    gap: 40px;
+    gap: 30px;
   }
 
   .carousel-arrow-left {
@@ -339,15 +364,22 @@
 @media only screen and (max-width: 1025px) {
   .carousel-content {
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
   }
 
   .carousel-info {
     width: 100%;
+    flex: auto;
+  }
+
+  .carousel-media-column {
+    width: 100%;
+    flex: auto;
   }
 
   .carousel-image-wrapper {
-    width: 100%;
+    height: 320px;
+    max-height: 350px;
   }
 
   .carousel-arrow {
@@ -367,16 +399,16 @@
 
 @media only screen and (max-width: 900px) {
   .work-section {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 
   .work-section h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 38px;
+    margin-bottom: 25px;
   }
 
   .carousel-number h3 {
-    font-size: 35px;
+    font-size: 32px;
   }
 
   .carousel-details h4 {
@@ -388,10 +420,73 @@
   }
 
   .carousel-slide {
-    padding: 30px 0;
+    padding: 20px 0 30px 0;
   }
 
-  .work-image img {
-    max-height: 250px;
+  .carousel-image-wrapper {
+    height: 220px;
   }
+}
+
+/* ── Case Study Enhancements ── */
+.case-badge-row {
+  margin-bottom: 4px;
+}
+
+.case-badge {
+  display: inline-block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fbbf24;
+}
+
+.case-study-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.case-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.case-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--accentColor);
+}
+
+.case-result-text {
+  color: #a7f3d0 !important;
+}
+
+[data-theme="light"] .case-result-text {
+  color: #047857 !important;
+  font-weight: 500;
+}
+
+.case-arch-box {
+  display: block;
+  padding: 8px 12px;
+  background: var(--codeBlockBg);
+  border: 1px solid var(--borderColor);
+  border-radius: 6px;
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--codeBlockText);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  margin-top: 2px;
 }
