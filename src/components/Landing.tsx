@@ -11,7 +11,7 @@ const Landing = ({ children }: PropsWithChildren) => {
           <div className="landing-intro">
             <div className="landing-badge">
               <span>
-                4+ Years Crafting Resilient Systems &amp; Autonomous AI</span>
+                4 Years Crafting Resilient Systems &amp; Autonomous AI</span>
             </div>
             <h2>Hello! I'm</h2>
             <h1>
